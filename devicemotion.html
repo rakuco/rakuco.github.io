@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <script>
+    window.addEventListener('load', () => {
+      console.log("onload");
+      window.addEventListener('devicemotion', e => { console.log(e) });
+      coeh();
+    });
+
+    function coeh() {
+      DeviceMotionEvent.requestPermission().then(p => {
+        console.log("permission: " + p);
+      }, err => { console.log(err) });
+    }
+  </script>
+</head>
+
+<body>
+  <input type="button" value="click me" onclick="coeh()" />
+</body>
+
+</html>
