@@ -96,7 +96,7 @@
           // Also apply a perspective() transformation to make it easier to see
           // the rotations around the X and Y axes.
           const rotation =
-              `perspective(100rem) rotateZ(${-evt.alpha}deg) rotateX(${-evt.beta}deg) rotateY(${evt.gamma}deg)`;
+              `perspective(50rem) rotateZ(${-evt.alpha}deg) rotateX(${-evt.beta}deg) rotateY(${evt.gamma}deg)`;
             h5logo.style.transform = rotation;
         } catch (ex) {
           document.getElementById("doeSupported").innerText = "NOT";
